@@ -1,2 +1,3 @@
-# SXO-Workflows-Samples
-SecureX Orchestration Worflows created by cdaguanno
+# 
+CD-SXO-Atomics 
+SecureX CD-SXO-Atomics  created by cdaguanno
