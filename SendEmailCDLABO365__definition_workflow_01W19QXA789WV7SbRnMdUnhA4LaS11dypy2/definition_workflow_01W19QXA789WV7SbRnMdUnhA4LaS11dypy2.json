@@ -1,0 +1,91 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01W19QXA789WV7SbRnMdUnhA4LaS11dypy2",
+    "name": "Email Test",
+    "title": "Email Test",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "atomic_group": "Atomic",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "display_name": "Email Test",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01W19R2G0MFHW74Jf16kUgCkPRXy2xHQt70",
+        "name": "Send Email",
+        "title": "Send Email",
+        "type": "email.smtp_send_email",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "body": "jdhfkjsdhfkjsdhfkjshdfkjshdfkjhsdkjfhskjdhfskjdhfksjdhfkjshdfks",
+          "continue_if_one_address_valid": true,
+          "continue_on_failure": false,
+          "display_name": "Send Email",
+          "from": "cdaguann+lab@cisco.com",
+          "html": true,
+          "runtime_user": {
+            "target_default": true
+          },
+          "skip_execution": false,
+          "subject": "test",
+          "target": {
+            "override_workflow_target": true,
+            "target_id": "definition_target_01W19V6YW59NO1XkC3RUGhP6Kh6SQAfEpS3"
+          },
+          "to": "cdaguann+lab@cisco.com"
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "targets": {
+    "definition_target_01W19V6YW59NO1XkC3RUGhP6Kh6SQAfEpS3": {
+      "unique_name": "definition_target_01W19V6YW59NO1XkC3RUGhP6Kh6SQAfEpS3",
+      "name": "cdlabnet_O365_target",
+      "title": "cdlabnet_O365_target",
+      "type": "email.smtp_endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_01W19UKVEIH73268vnueM2wlQOs97EO2wvO",
+        "display_name": "cdlabnet_O365_target",
+        "no_runtime_user": false,
+        "port": 587,
+        "protocol": "SMTP",
+        "server": "smtpout.secureserver.net"
+      }
+    }
+  },
+  "runtime_users": {
+    "definition_runtime_user_01W19UKVEIH73268vnueM2wlQOs97EO2wvO": {
+      "unique_name": "definition_runtime_user_01W19UKVEIH73268vnueM2wlQOs97EO2wvO",
+      "name": "CDLABNET O365",
+      "title": "CDLABNET O365",
+      "type": "runtime_user.email_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "description": "My O365",
+        "display_name": "CDLABNET O365",
+        "password": "*****",
+        "sender": "*****"
+      }
+    }
+  }
+}
