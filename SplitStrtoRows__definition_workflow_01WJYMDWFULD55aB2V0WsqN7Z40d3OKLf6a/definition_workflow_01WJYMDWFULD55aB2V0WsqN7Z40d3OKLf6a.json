@@ -1,0 +1,125 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01WJYMDWFULD55aB2V0WsqN7Z40d3OKLf6a",
+    "name": "Split-String-To-Rows",
+    "title": "Split-String-To-Rows",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "\"4\",\"System\",\"\",\"10.100.200.30\",\"49845\",\"10.100.200.14\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61072\",\"10.100.200.8\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61075\",\"10.100.200.8\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61076\",\"10.100.200.8\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61077\",\"10.100.200.8\",\"445\",\"880\",\"svchost.exe\",\"C:\\\\Windows\\\\system32\\\\svchost.exe -k RPCSS\",\"fe80::884d:256:9d82:2a1\",\"135\",\"fe80::884d:256:9d82:2a1\",\"49704\",\"312\",\"svchost.exe\",\"C:\\\\Windows\\\\system32\\\\svchost.exe -k netsvcs\",\"10.100.200.30\",\"64393\",\"52.226.139.185\",\"443\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"10.100.200.30\",\"3389\",\"10.100.100.113\",\"14013\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"49704\",\"fe80::884d:256:9d82:2a1\",\"135\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"61059\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"61063\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"63202\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"4972\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k NetworkServiceRemoteDesktopPublishing\",\"fe80::884d:256:9d82:2a1\",\"5504\",\"fe80::884d:256:9d82:2a1\",\"63256\",\"4980\",\"tssdis.exe\",\"C:\\\\Windows\\\\System32\\\\tssdis.exe\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"fe80::884d:256:9d82:2a1\",\"61059\",\"4980\",\"tssdis.exe\",\"C:\\\\Windows\\\\System32\\\\tssdis.exe\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"fe80::884d:256:9d82:2a1\",\"61063\",\"4980\",\"tssdis.exe\",\"C:\\\\Windows\\\\System32\\\\tssdis.exe\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"fe80::884d:256:9d82:2a1\",\"63202\",\"3640\",\"w3wp.exe\",\"c:\\\\windows\\\\system32\\\\inetsrv\\\\w3wp.exe -ap \\\\\\\\\\\"RDWebAccess\\\\\\\\\\\" -v \\\\\\\\\\\"v4.0\\\\\\\\\\\" -l \\\\\\\\\\\"webengine4.dll\\\\\\\\\\\" -a \\\\\\\\.\\\\pipe\\\\iisipmcd9df818-76c7-492b-928d-1f4724bdd67f -h \\\\\\\\\\\"C:\\\\inetpub\\\\temp\\\\apppools\\\\RDWebAccess\\\\RDWebAccess.config\\\\\\\\\\\" -w \\\\\\\\\\\"\\\\\\\\\\\" -m 0\",\"fe80::884d:256:9d82:2a1\",\"63256\",\"fe80::884d:256:9d82:2a1\",\"5504\",\"3452\",\"rdpinit.exe\",\"C:\\\\Windows\\\\system32\\\\rdpinit.exe\",\"10.100.200.30\",\"65063\",\"52.226.139.121\",\"443\",\"7668\",\"orbital.exe\",\"\\\\\\\\\\\"C:\\\\Program Files\\\\Cisco\\\\Orbital\\\\orbital.exe\\\\\\\\\\\"\",\"10.100.200.30\",\"60279\",\"52.43.91.219\",\"443\"",
+          "scope": "input",
+          "name": "Delimited_String",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJYUNRGM8F16nBtUiOJVQT8akD5wcLWlp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "CsvFile",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJZCNJDGKQ93yOwwExhO3jXdXlxNkxrZ0",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Atomic",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Precondition: Input of a concatenate comma delimited string\nPostcondition: Output CSVfile in rows of 7",
+      "display_name": "Split-String-To-Rows",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01WJYMS2MQGT73RGWIi51GBS7RE9CRKrbmM",
+        "name": "Execute Python Script",
+        "title": "Split To Rows",
+        "type": "python3.script",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "description": "Precondition: Input of a concatenate comma delimited string\nPostcondition: Output CSVfile in rows of 7",
+          "display_name": "Split To Rows",
+          "script": "import sys,json,csv,io\nInStr=sys.argv[1]\n\n#ConStr = InStr.split(',')\n#ConStr = [\"4\",\"System\",\"\",\"10.100.200.30\",\"49845\",\"10.100.200.14\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61072\",\"10.100.200.8\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61075\",\"10.100.200.8\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61076\",\"10.100.200.8\",\"445\",\"4\",\"System\",\"\",\"10.100.200.30\",\"61077\",\"10.100.200.8\",\"445\",\"880\",\"svchost.exe\",\"C:\\\\Windows\\\\system32\\\\svchost.exe -k RPCSS\",\"fe80::884d:256:9d82:2a1\",\"135\",\"fe80::884d:256:9d82:2a1\",\"49704\",\"312\",\"svchost.exe\",\"C:\\\\Windows\\\\system32\\\\svchost.exe -k netsvcs\",\"10.100.200.30\",\"64393\",\"52.226.139.185\",\"443\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"10.100.200.30\",\"3389\",\"10.100.100.113\",\"14013\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"49704\",\"fe80::884d:256:9d82:2a1\",\"135\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"61059\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"61063\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"308\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k termsvcs\",\"fe80::884d:256:9d82:2a1\",\"63202\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"4972\",\"svchost.exe\",\"C:\\\\Windows\\\\System32\\\\svchost.exe -k NetworkServiceRemoteDesktopPublishing\",\"fe80::884d:256:9d82:2a1\",\"5504\",\"fe80::884d:256:9d82:2a1\",\"63256\",\"4980\",\"tssdis.exe\",\"C:\\\\Windows\\\\System32\\\\tssdis.exe\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"fe80::884d:256:9d82:2a1\",\"61059\",\"4980\",\"tssdis.exe\",\"C:\\\\Windows\\\\System32\\\\tssdis.exe\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"fe80::884d:256:9d82:2a1\",\"61063\",\"4980\",\"tssdis.exe\",\"C:\\\\Windows\\\\System32\\\\tssdis.exe\",\"fe80::884d:256:9d82:2a1\",\"61024\",\"fe80::884d:256:9d82:2a1\",\"63202\",\"3640\",\"w3wp.exe\",\"c:\\\\windows\\\\system32\\\\inetsrv\\\\w3wp.exe -ap \\\\\\\\\\\"RDWebAccess\\\\\\\\\\\" -v \\\\\\\\\\\"v4.0\\\\\\\\\\\" -l \\\\\\\\\\\"webengine4.dll\\\\\\\\\\\" -a \\\\\\\\.\\\\pipe\\\\iisipmcd9df818-76c7-492b-928d-1f4724bdd67f -h \\\\\\\\\\\"C:\\\\inetpub\\\\temp\\\\apppools\\\\RDWebAccess\\\\RDWebAccess.config\\\\\\\\\\\" -w \\\\\\\\\\\"\\\\\\\\\\\" -m 0\",\"fe80::884d:256:9d82:2a1\",\"63256\",\"fe80::884d:256:9d82:2a1\",\"5504\",\"3452\",\"rdpinit.exe\",\"C:\\\\Windows\\\\system32\\\\rdpinit.exe\",\"10.100.200.30\",\"65063\",\"52.226.139.121\",\"443\",\"7668\",\"orbital.exe\",\"\\\\\\\\\\\"C:\\\\Program Files\\\\Cisco\\\\Orbital\\\\orbital.exe\\\\\\\\\\\"\",\"10.100.200.30\",\"60279\",\"52.43.91.219\",\"443\"]\nConStr = next(csv.reader(io.StringIO(InStr)))\nRowStr=str()\nCnt1=int()\nCsv=str()\n\nCnt=1\nfor index, Elem in enumerate(ConStr, start=1):\n    if Cnt==1: RowStr=Elem+\",\"\n    if Cnt\u003c7 and Cnt\u003e1: RowStr=RowStr+Elem+\",\"\n    if Cnt==7: RowStr=RowStr+Elem\n    #print(RowStr)\n    Cnt=Cnt+1\n    if index % 7 == 0:\n        Csv=Csv+RowStr\n        RowStr=\"\"\n        Cnt=1\n        #print(Csv)\n\njson_object = {}\njson_object['ret']=Csv\njson_out = json.dumps(json_object)",
+          "script_arguments": [
+            "$workflow.definition_workflow_01WJYMDWFULD55aB2V0WsqN7Z40d3OKLf6a.input.variable_workflow_01WJYUNRGM8F16nBtUiOJVQT8akD5wcLWlp$"
+          ],
+          "script_queries": [
+            {
+              "script_query": "json_out",
+              "script_query_name": "json_out",
+              "script_query_type": "string"
+            }
+          ],
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01WJZ860GQOD80wK8umhx5mlYglxtIiUsjY",
+        "name": "JSONPath Query",
+        "title": "JSON Query return",
+        "type": "corejava.jsonpathquery",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "display_name": "JSON Query return",
+          "input_json": "$activity.definition_activity_01WJYMS2MQGT73RGWIi51GBS7RE9CRKrbmM.output.script_queries.json_out$",
+          "jsonpath_queries": [
+            {
+              "jsonpath_query": "$.ret",
+              "jsonpath_query_name": "return",
+              "jsonpath_query_type": "string"
+            }
+          ],
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01WJZCPQ5XC7D0uVAeJlbD2NdEhwjPbnn4Y",
+        "name": "Set Variables",
+        "title": "Set CSV Output",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Set CSV Output",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_01WJYMDWFULD55aB2V0WsqN7Z40d3OKLf6a.output.variable_workflow_01WJZCNJDGKQ93yOwwExhO3jXdXlxNkxrZ0$",
+              "variable_value_new": "$activity.definition_activity_01WJZ860GQOD80wK8umhx5mlYglxtIiUsjY.output.jsonpath_queries.return$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  }
+}
